@@ -1,0 +1,22 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+img{
+  position: fixed;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9){
+  img{
+    width: auto;
+    height: 100%;
+  }
+}
