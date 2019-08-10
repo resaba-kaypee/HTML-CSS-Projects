@@ -31,8 +31,7 @@ body{
   width: 100%;
   margin-top: 50px;
 }
-.input-field input,
-.input-field textarea{
+.input-field input{
   width: 100%;
   padding: 5px 0;
   background: transparent;
@@ -45,11 +44,23 @@ body{
   text-transform: uppercase;
   resize: none;
 }
+.input-field textarea{
+  width: 100%;
+  padding: 5px 0;
+  border: 2px solid #666;
+  background: transparent;
+  font-size: 16px;
+  color: #666;
+  font-weight: 700;
+  text-transform: uppercase;
+  resize: none;
+}
 .input-field label{
   position: absolute;
   top: 0;
   left: 0;
   padding: 5px 0;
+  margin-left: 5px;
   pointer-events: none;
   font-size: 16px;
   color: #666;
@@ -64,13 +75,21 @@ body{
   top: -25px;
   font-size: 14px;
   padding: 2px 5px;
-  background: #ff006a;
+  background: #9686ff;
   color: #ffffff;
   border-radius: 4px;
 }
+/* .input-field input[type="email"]:invalid + label{
+  top: -25px;
+  font-size: 14px;
+  padding: 2px 5px;
+  background: #ff006a;
+  color: #ffffff;
+  border-radius: 4px;
+} */
 .btn{
   margin-top: 20px;
-  background: #ff006a;
+  background: #9686ff;
   color: #ffffff;
   padding: 15px 30px;
   border: none;

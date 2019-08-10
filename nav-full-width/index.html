@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Full width menu bar</title>
+</head>
+<body>
+  <div class="nav">
+    <div class="toggle" id="toggle"></div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Our Team</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+  <script>
+    const toggle = document.getElementById('toggle').addEventListener('click', (e) => {
+    const ul = document.getElementsByTagName('ul')[0];
+        if(e.target.className.includes('active')){
+          e.target.className = "toggle";
+          ul.className = '';
+        } else{
+          e.target.className += " active";
+          ul.className = "active";
+        }
+        // console.log(ul);
+    })
+  </script>
+</body>
+</html>
